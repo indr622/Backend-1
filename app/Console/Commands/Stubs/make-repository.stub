@@ -1,0 +1,18 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Repositories\BaseRepository;
+
+class DummyClass extends BaseRepository
+{
+    public function __construct(Model $model)
+    {
+        $this->model = $model;
+    }
+
+    /*
+    * Create your custom function here
+    * ...
+    **/
+}

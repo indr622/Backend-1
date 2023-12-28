@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Services\BaseService;
+
+class DummyService extends BaseService
+{
+    public function __construct(Repository $repo, Filter $filter)
+    {
+        parent::__construct();
+        $this->repo = $repo;
+        $this->object = 'object Name';
+        $this->filterClass = $filter;
+    }
+}
